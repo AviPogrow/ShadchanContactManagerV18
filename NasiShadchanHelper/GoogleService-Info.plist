@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>375478813152-s3iei6at6q8asokd2rpiglk4r80m0bi0.apps.googleusercontent.com</string>
+	<string>375478813152-tf534vl943lv03cdkfm8dc4nj4ck56l6.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.375478813152-s3iei6at6q8asokd2rpiglk4r80m0bi0</string>
+	<string>com.googleusercontent.apps.375478813152-tf534vl943lv03cdkfm8dc4nj4ck56l6</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBxmOrk-Q4GVjTA7zTy6QX9pjO2f_VEzMY</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.avipogrow.NasiAdmin</string>
+	<string>com.AviPogrow.NasiShadchanHelper</string>
 	<key>PROJECT_ID</key>
 	<string>nasidriveadmin</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:375478813152:ios:17c6497e6ac7439ef4ab85</string>
+	<string>1:375478813152:ios:a555ec475a69199cf4ab85</string>
 	<key>DATABASE_URL</key>
 	<string>https://nasidriveadmin.firebaseio.com</string>
 </dict>
