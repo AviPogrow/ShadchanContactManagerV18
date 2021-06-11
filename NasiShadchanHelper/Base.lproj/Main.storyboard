@@ -913,7 +913,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Brief Description of What She is Looking For" id="GJs-1j-CdB">
+                            <tableViewSection headerTitle="What She is Looking For?" id="GJs-1j-CdB">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="BJQ-7V-bMg">
                                         <rect key="frame" x="0.0" y="1678.5000013871627" width="414" height="200"/>
