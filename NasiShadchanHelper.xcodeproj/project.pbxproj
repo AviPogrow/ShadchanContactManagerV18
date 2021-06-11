@@ -30,6 +30,7 @@
 		18AB903C252DBACA00D9FCAB /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB903B252DBACA00D9FCAB /* HomeTabBarController.swift */; };
 		18AB903E252DC21100D9FCAB /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB903D252DC21100D9FCAB /* UserInfo.swift */; };
 		18E5DD152525CBCE005DD1DE /* NasiGirlsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5DD142525CBCE005DD1DE /* NasiGirlsList.swift */; };
+		3D1C42F0267405820004618A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C42EF267405820004618A /* GoogleService-Info.plist */; };
 		3D689F0826729E8F00638097 /* SBL_Hbrw.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D689F0726729DFA00638097 /* SBL_Hbrw.ttf */; };
 		3D9DA71C25A7827F0056F656 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DA71B25A7827F0056F656 /* MyTabBarController.swift */; };
 		3D9DA71E25ACCEB10056F656 /* ViewResumeVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DA71D25ACCEB10056F656 /* ViewResumeVCViewController.swift */; };
@@ -61,7 +62,6 @@
 		CEC468DE245B37950071EC85 /* FullTimeCollegeWorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC468DD245B37950071EC85 /* FullTimeCollegeWorkingViewController.swift */; };
 		CEC468E0245C60120071EC85 /* YeshivaAndCollegeWorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC468DF245C60120071EC85 /* YeshivaAndCollegeWorkingViewController.swift */; };
 		CECE6A4F24559EF900084A28 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE6A4E24559EF900084A28 /* Config.swift */; };
-		CED7BB5D24787199005671F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED7BB5C24787199005671F3 /* GoogleService-Info.plist */; };
 		CEF80D1E245F7014009FE684 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80D1D245F7014009FE684 /* HudView.swift */; };
 		CEF80D222460BBBC009FE684 /* FTCollegeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80D212460BBBC009FE684 /* FTCollegeTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -107,7 +107,9 @@
 		18AB903B252DBACA00D9FCAB /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		18AB903D252DC21100D9FCAB /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		18E5DD142525CBCE005DD1DE /* NasiGirlsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasiGirlsList.swift; sourceTree = "<group>"; };
+		3D1C42EF267405820004618A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D689F0726729DFA00638097 /* SBL_Hbrw.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SBL_Hbrw.ttf; sourceTree = "<group>"; };
+		3D9D5B8D2673D7F70063D252 /* NasiShadchanHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NasiShadchanHelper.entitlements; sourceTree = "<group>"; };
 		3D9DA71B25A7827F0056F656 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		3D9DA71D25ACCEB10056F656 /* ViewResumeVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResumeVCViewController.swift; sourceTree = "<group>"; };
 		3D9DA71F25AE0DEA0056F656 /* AllNasiGirlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNasiGirlsViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +147,6 @@
 		CEC468DD245B37950071EC85 /* FullTimeCollegeWorkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTimeCollegeWorkingViewController.swift; sourceTree = "<group>"; };
 		CEC468DF245C60120071EC85 /* YeshivaAndCollegeWorkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeshivaAndCollegeWorkingViewController.swift; sourceTree = "<group>"; };
 		CECE6A4E24559EF900084A28 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		CED7BB5C24787199005671F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEF80D1D245F7014009FE684 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		CEF80D212460BBBC009FE684 /* FTCollegeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTCollegeTableViewCell.swift; sourceTree = "<group>"; };
 		D387D40A1052AD5A246D2953 /* Pods_NasiShadchanHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasiShadchanHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,6 +398,7 @@
 		CE3AC07224536729006B9FEA /* NasiShadchanHelper */ = {
 			isa = PBXGroup;
 			children = (
+				3D9D5B8D2673D7F70063D252 /* NasiShadchanHelper.entitlements */,
 				CE3AC07324536729006B9FEA /* AppDelegate.swift */,
 				18E5DD132525CBC2005DD1DE /* Model */,
 				18A37F9E252F8A7E009C6BEB /* cells */,
@@ -411,7 +413,7 @@
 				CE3AC07C24536765006B9FEA /* Assets.xcassets */,
 				3D689F0726729DFA00638097 /* SBL_Hbrw.ttf */,
 				CE3AC07E24536765006B9FEA /* LaunchScreen.storyboard */,
-				CED7BB5C24787199005671F3 /* GoogleService-Info.plist */,
+				3D1C42EF267405820004618A /* GoogleService-Info.plist */,
 				CE3AC08124536765006B9FEA /* Info.plist */,
 				CE428D51248134AD00C34EAB /* User.swift */,
 			);
@@ -571,8 +573,8 @@
 				18A37FA2252F8AAD009C6BEB /* NotesTableCell.xib in Resources */,
 				CE3AC07D24536765006B9FEA /* Assets.xcassets in Resources */,
 				1851798B2525FAF20099D65E /* ProgressIndicator.xib in Resources */,
-				CED7BB5D24787199005671F3 /* GoogleService-Info.plist in Resources */,
 				CE75EBC12465CD410056A1D7 /* SavedSingleCell.xib in Resources */,
+				3D1C42F0267405820004618A /* GoogleService-Info.plist in Resources */,
 				CE3AC07B24536729006B9FEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -873,6 +875,7 @@
 			baseConfigurationReference = 690419FF2D95D46817B237C4 /* Pods-NasiShadchanHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NasiShadchanHelper/NasiShadchanHelper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 17.0;
 				DEVELOPMENT_TEAM = P77A2352BM;
@@ -895,6 +898,7 @@
 			baseConfigurationReference = 120B71D82B9D8096BD2F254A /* Pods-NasiShadchanHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NasiShadchanHelper/NasiShadchanHelper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 17.0;
 				DEVELOPMENT_TEAM = P77A2352BM;

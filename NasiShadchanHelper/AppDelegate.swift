@@ -8,10 +8,12 @@
 
 import UIKit
 import Firebase
+import FirebaseMessaging
+import FirebaseAnalytics
 import IQKeyboardManagerSwift
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
     
@@ -21,8 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
         Database.database().isPersistenceEnabled = true
-        Firebase.Analytics.setAnalyticsCollectionEnabled(true)
+        //Firebase.Analytics.setAnalyticsCollectionEnabled(true)
 
         // -- IQKeyboardManager---
         IQKeyboardManager.shared.enable = true

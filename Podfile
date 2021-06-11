@@ -19,5 +19,6 @@ pod 'KMPlaceholderTextView'
 pod 'AAFloatingButton'
 pod 'Lightbox'
 pod 'Firebase/Analytics'
+pod 'Firebase/Messaging'
 
 end
