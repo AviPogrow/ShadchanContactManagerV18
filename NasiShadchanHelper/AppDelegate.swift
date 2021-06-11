@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
              self.makingRootFlow(Constant.AppRootFlow.kAuthVc)
         }
-        setUpNavigationAppearance()
+        //setUpNavigationAppearance()
         return true
     }
     
