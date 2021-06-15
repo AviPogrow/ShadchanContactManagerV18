@@ -13,12 +13,13 @@ import FirebaseAnalytics
 import IQKeyboardManagerSwift
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
     
     class func instance() -> AppDelegate { return UIApplication.shared.delegate as! AppDelegate }
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -37,6 +38,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
              self.makingRootFlow(Constant.AppRootFlow.kAuthVc)
         }
         //setUpNavigationAppearance()
+        
+        
+        // 1
+        UNUserNotificationCenter.current().delegate = self
+        // 2
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(
+          options: authOptions) { _, _ in }
+        // 3
+        application.registerForRemoteNotifications()
+        
+        Messaging.messaging().delegate = self
+
         return true
     }
     
@@ -78,7 +92,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+  
+    func userNotificationCenter(
+    _ center: UNUserNotificationCenter,
+    willPresent notification: UNNotification,
+    withCompletionHandler completionHandler:
+    @escaping (UNNotificationPresentationOptions) -> Void
+  ) {
+    if #available(iOS 14.0, *) {
+        completionHandler([[.banner, .sound]])
+    } else {
+        // Fallback on earlier versions
+    }
+  }
 
+  func userNotificationCenter(
+    _ center: UNUserNotificationCenter,
+    didReceive response: UNNotificationResponse,
+    withCompletionHandler completionHandler: @escaping () -> Void
+  ) {
+    completionHandler()
+  }
+
+func application(
+  _ application: UIApplication,
+  didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
+) {
+  Messaging.messaging().apnsToken = deviceToken
+}
+}
+
+extension AppDelegate: MessagingDelegate {
+  func messaging(
+    _ messaging: Messaging,
+    didReceiveRegistrationToken fcmToken: String?
+  ) {
+    let tokenDict = ["token": fcmToken ?? ""]
+    NotificationCenter.default.post(
+      name: Notification.Name("FCMToken"),
+      object: nil,
+      userInfo: tokenDict)
+  }
+    
+}
+    
+    
 
 
 

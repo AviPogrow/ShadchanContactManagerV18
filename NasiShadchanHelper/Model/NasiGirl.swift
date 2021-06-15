@@ -87,7 +87,7 @@ class NasiGirl: NSObject {
         let briefDescriptionOfWhatGirlIsDoing = value["briefDescriptionOfWhatGirlIsDoing"] ?? ""
         
         
-        print("the value for name is \(firstNameOfGirl) - \(lastNameOfGirl)and whatsSheLike----\(briefDescriptionOfWhatGirlIsLike)and whatSheslookingFor----\(briefDescriptionOfWhatGirlIsLookingFor)and whatsSheDoing:---\(briefDescriptionOfWhatGirlIsDoing)")
+        //print("the value for name is \(firstNameOfGirl) - \(lastNameOfGirl)and whatsSheLike----\(briefDescriptionOfWhatGirlIsLike)and whatSheslookingFor----\(briefDescriptionOfWhatGirlIsLookingFor)and whatsSheDoing:---\(briefDescriptionOfWhatGirlIsDoing)")
         
         
         
