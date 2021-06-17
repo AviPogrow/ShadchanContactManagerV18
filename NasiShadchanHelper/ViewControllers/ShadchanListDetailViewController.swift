@@ -75,6 +75,8 @@
     @IBOutlet weak var lblCellNumberToRed: UILabel!
     @IBOutlet weak var lblEmailToRed: UILabel!
     
+    @IBOutlet weak var lblTitleOfPersonToReddShidduch: UILabel!
+    
     //Section 6
     @IBOutlet weak var lblContactLastName: UILabel!
     @IBOutlet weak var lblContactFirstName: UILabel!
@@ -220,7 +222,7 @@
                 let snapshot = child as? DataSnapshot
                 let value = snapshot?.value as? [String: AnyObject]
                 
-                print("the value of snapshot is\(snapshot) and value is \(snapshot?.value)")
+                //print("the value of snapshot is\(snapshot) and value is \(snapshot?.value)")
                 
                 let girlID = value!["userId"] as! String
                 let currentGirlID = self.selectedNasiGirl.key
@@ -415,6 +417,8 @@
         lblDob.text = "\(selectedSingle!.age)"
         lblLivingInIsrael?.text = "\(selectedSingle?.livingInIsrael ?? "")"
         lblFamilyBg?.text = "\(selectedSingle?.girlFamilyBackground ?? "")"
+        
+        currentOccupationLabel.text = selectedSingle?.briefDescriptionOfWhatGirlIsDoing
         //whatIsSheDoingLabel.text = "\(selectedSingle?.briefDescriptionOfWhatGirlIsDoing ?? "")"
     }
     
@@ -422,6 +426,9 @@
     private func setUpForthSection() {
         
         let  selectedSingle = selectedNasiGirl
+        
+        lblTitleOfPersonToReddShidduch.text = selectedSingle?.titleOfPersonToReddShidduch
+        
         lblLastNameToRed?.text = "\(selectedSingle?.lastNameOfPersonToContactToReddShidduch ?? "")"
         lblFirstNameToRed?.text = "\(selectedSingle?.firstNameOfPersonToContactToReddShidduch ?? "")"
         lblCellNumberToRed.text = selectedSingle?.cellNumberOfContactToReddShidduch ?? ""
@@ -520,7 +527,7 @@
         let selectedSingle = selectedNasiGirl
         
         
-        print("the state of selectedNasiGirl is \(selectedNasiGirl.debugDescription)\(selectedNasiGirl.briefDescriptionOfWhatGirlIsLike)and her key is\(selectedNasiGirl.key)and ref is\(selectedNasiGirl.ref)")
+        //print("the state of selectedNasiGirl is \(selectedNasiGirl.debugDescription)\(selectedNasiGirl.briefDescriptionOfWhatGirlIsLike)and her key is\(selectedNasiGirl.key)and ref is\(selectedNasiGirl.ref)")
         
         
         

@@ -37,7 +37,17 @@ class CategoriesViewController: UIViewController {
     
           for child in snapshot.children {
             let snapshot = child as? DataSnapshot
-               let nasiGirl = NasiGirl(snapshot: snapshot!)
+            
+            //print("the state of snapshot is \(snapshot?.description)")
+            
+            
+            
+            
+            
+            
+            
+            let nasiGirl = NasiGirl(snapshot: snapshot!)
+            
             nasiGirlsArray.append(nasiGirl)
         }
         

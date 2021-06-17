@@ -508,7 +508,7 @@ extension ResumeViewController {
                 let girlID = value!["userId"] as! String
                 let currentGirlID = self.selectedNasiGirl.key
                 
-                print("the value of currentSingleId is \(currentGirlID) and girlId is \(girlID)")
+               // print("the value of currentSingleId is \(currentGirlID) and girlId is \(girlID)")
                 
                     if girlID == currentGirlID {
                         

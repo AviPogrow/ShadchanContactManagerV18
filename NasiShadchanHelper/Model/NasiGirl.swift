@@ -20,7 +20,12 @@ class NasiGirl: NSObject {
     var  sentListRef: String = ""
     var  briefDescriptionOfWhatGirlIsLike = ""
     var  briefDescriptionOfWhatGirlIsLookingFor = ""
+    
+    
     var briefDescriptionOfWhatGirlIsDoing = ""
+    var titleOfPersonToReddShidduch = ""
+    
+    
     var category = ""
     var cellNumberOfContactToReddShidduch = ""
     var cityOfResidence = ""
@@ -73,25 +78,17 @@ class NasiGirl: NSObject {
         //let value = snapshot.value as! [String: AnyObject]
         guard  let value = snapshot.value! as? [String: String] else { return }
         
-       
-        
-        
-        
-        
-        
         let lastNameOfGirl = value["lastNameOfGirl"] ?? ""
         
         let briefDescriptionOfWhatGirlIsLike = value["briefDescriptionOfWhatGirlIsLike"] ?? ""
         let briefDescriptionOfWhatGirlIsLookingFor = value["briefDescriptionOfWhatGirlIsLookingFor"] ?? ""
-        
         let briefDescriptionOfWhatGirlIsDoing = value["briefDescriptionOfWhatGirlIsDoing"] ?? ""
         
-        
-        //print("the value for name is \(firstNameOfGirl) - \(lastNameOfGirl)and whatsSheLike----\(briefDescriptionOfWhatGirlIsLike)and whatSheslookingFor----\(briefDescriptionOfWhatGirlIsLookingFor)and whatsSheDoing:---\(briefDescriptionOfWhatGirlIsDoing)")
-        
+        let titleOfPersonToReddShidduch = value["titleOfPersonToContactToReddShidduch"] ?? ""
         
         
-        
+        print("the value for name is \(firstNameOfGirl) - \(lastNameOfGirl)and whatsSheDoing:---\(briefDescriptionOfWhatGirlIsDoing)")
+        print("title of person to redd is \(titleOfPersonToReddShidduch)")
         
         
         
@@ -111,7 +108,7 @@ class NasiGirl: NSObject {
          //print("the name is \(firstNameOfGirl)\(lastNameOfGirl) firebase dob is\(strDOB)")
         var date: Date? = Date.FromString(strDOB)
             
-            print("the name is \(firstNameOfGirl)\(lastNameOfGirl)the key is \(snapshot.key) firebase dob is\(strDOB) birthdate is \(date)")
+            //print("the name is \(firstNameOfGirl)\(lastNameOfGirl)the key is \(snapshot.key) firebase dob is\(strDOB) birthdate is \(date)")
             
             
          //MARK: TODO
@@ -183,6 +180,9 @@ class NasiGirl: NSObject {
         self.briefDescriptionOfWhatGirlIsLookingFor = briefDescriptionOfWhatGirlIsLookingFor
         
         self.briefDescriptionOfWhatGirlIsDoing = briefDescriptionOfWhatGirlIsDoing
+        
+        
+        self.titleOfPersonToReddShidduch = titleOfPersonToReddShidduch
         
         self.category = category
         self.cellNumberOfContactToReddShidduch = cellNumberOfContactToReddShidduch

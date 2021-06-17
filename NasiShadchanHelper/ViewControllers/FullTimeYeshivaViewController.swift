@@ -251,8 +251,8 @@ class FullTimeYeshivaViewController: UIViewController, UITableViewDataSource,UIT
         cell.SeminaryLabel.text = currentGirl.seminaryName  //5th Label - Seminary
         cell.parnassahPlanLabel.text = "\(currentGirl.plan )"  // 6th Label - Plan
         
-        print("the value of last name is \(currentGirl.lastNameOfGirl)")
-        print("the value of image download string is \(currentGirl.imageDownloadURLString)")
+        //print("the value of last name is \(currentGirl.lastNameOfGirl)")
+        //print("the value of image download string is \(currentGirl.imageDownloadURLString)")
         
         
         
