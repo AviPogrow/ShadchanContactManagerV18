@@ -78,6 +78,7 @@
     @IBOutlet weak var lblTitleOfPersonToReddShidduch: UILabel!
     
     //Section 6
+    @IBOutlet weak var lblTitleOfContact: UILabel!
     @IBOutlet weak var lblContactLastName: UILabel!
     @IBOutlet weak var lblContactFirstName: UILabel!
     @IBOutlet weak var lblContactCell: UILabel!
@@ -438,6 +439,8 @@
     //TODO: SetUp Data For To discuss a shidduch Section
     private func setUpFifthSection() {
         let  selectedSingle = selectedNasiGirl
+        
+        lblTitleOfContact.text = selectedSingle?.titleOfAContactWhoKnowsGirl
         
         lblContactLastName?.text = "\(selectedSingle?.lastNameOfAContactWhoKnowsGirl ?? "")"
         lblContactFirstName?.text = "\(selectedSingle?.firstNameOfAContactWhoKnowsGirl ?? "")"

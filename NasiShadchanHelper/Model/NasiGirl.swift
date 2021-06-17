@@ -24,6 +24,7 @@ class NasiGirl: NSObject {
     
     var briefDescriptionOfWhatGirlIsDoing = ""
     var titleOfPersonToReddShidduch = ""
+    var titleOfAContactWhoKnowsGirl = ""
     
     
     var category = ""
@@ -85,10 +86,13 @@ class NasiGirl: NSObject {
         let briefDescriptionOfWhatGirlIsDoing = value["briefDescriptionOfWhatGirlIsDoing"] ?? ""
         
         let titleOfPersonToReddShidduch = value["titleOfPersonToContactToReddShidduch"] ?? ""
+        let titleOfAContactWhoKnowsGirl = value["titleOfAContactWhoKnowsGirl"] ?? ""
         
         
-        print("the value for name is \(firstNameOfGirl) - \(lastNameOfGirl)and whatsSheDoing:---\(briefDescriptionOfWhatGirlIsDoing)")
-        print("title of person to redd is \(titleOfPersonToReddShidduch)")
+        print("the value for name is \(firstNameOfGirl) - \(lastNameOfGirl)")
+        print("title of contactWhoKNowsGirl is \(titleOfAContactWhoKnowsGirl)")
+        
+        
         
         
         
@@ -183,6 +187,7 @@ class NasiGirl: NSObject {
         
         
         self.titleOfPersonToReddShidduch = titleOfPersonToReddShidduch
+        self.titleOfAContactWhoKnowsGirl = titleOfAContactWhoKnowsGirl
         
         self.category = category
         self.cellNumberOfContactToReddShidduch = cellNumberOfContactToReddShidduch
